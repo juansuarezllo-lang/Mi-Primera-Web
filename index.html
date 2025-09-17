@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi sitio básico</title>
+   <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="logo">Mi Sitio Web</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h2>¡Hola! Soy Juan</h2>
+            <p>Bienvenido a mi primera página web creada con HTML y CSS.</p>
+            <a class="cta" href="#about">Conoce más</a>
+        </section>
+
+        <section id="about" class="container">
+            <h3>Sobre mí</h3>
+            <p>Estudiante aprendiendo desarrollo web. Esta es mi primera página creada desde cero.</p>
+        </section>
+
+        <section id="contacto" class="container">
+            <h3>Contacto</h3>
+            <p>Email: <a href="mailto:juan.suarezllo@cun.edu.co">juan.suarezllo@cun.edu.co</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span> - Juan Suarez</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
